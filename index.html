@@ -15,7 +15,7 @@
     <h1>Jira DashBoard</h1>
 
     <div class="display">
-      <div class="todo">
+      <div class="todo-container">
         <h2>Todo</h2>
         <div class="form-container">
           <button id="create-issue-btn" class="">
@@ -28,21 +28,22 @@
           </form>
         </div>
 
-        <div class="dropzone issues-container">
+        <div class="dropzone issues-container" id="todo">
           <h2>Issues</h2>
           <!-- adding issues here -->
         </div>
       </div>
 
-      <div class="dropzone in-progress">
+      <div class="dropzone in-progress" id="in-progress">
         <h2>In Progress</h2>
       </div>
 
-      <div class="dropzone done">
+      <div class="dropzone done" id="done">
         <h2>Done</h2>
       </div>
     </div>
 
     <script src="/script.js"></script>
+    <script src="/dragdrop.js"></script>
   </body>
 </html>
